@@ -51,7 +51,7 @@ function spelOmgang() {
     // Kolla om datorn har vunnit
     console.log("Datorn har vunnit spelet!"); // Skriv ut att datorn har vunnit
   } else {
-    spelOmgang(); // Fortsätt spela om ingen har vunnit 3 gångar
+    spelOmgang(); // Fortsätt spela om ingen har vunnit 3 gångar (funktion som kallar på sig själv)
   }
 }
 
