@@ -23,7 +23,7 @@ let datorPoang = 0;
 function spelOmgang() {
   const val = ["sten", "sax", "påse"]; // Lista/array över möjliga val samt kolla om spelarens val är giltigt
   const spelarVal = prompt("Välj sten, sax eller påse:").toLowerCase(); // Använd prompt för att få spelarens val, och gör det till gemener
-  const datorVal = val[Math.floor(Math.random() * val.length)]; // Datorn väljer slumpmässigt ett av valen. (random ger ett slumpat decimaltal mellan 0 och 1, floor används för att få ett heltal, * val.length kunde ha skrivits som * 3 i detta fallet då val.length betyder antalet element i arrayen, vilket är 3)
+  const datorVal = val[Math.floor(Math.random() * val.length)]; // Datorn väljer slumpmässigt ett av valen. (random ger ett slumpat decimaltal mellan 0 och 1, floor används för att få ett heltal genom att avrunda nedåt(0, 1 eller 2 i detta fall), * val.length kunde ha skrivits som * 3 i detta fallet då val.length betyder antalet element i arrayen, vilket är 3)
 
   console.log(`Människan valde: ${spelarVal}`); // Skriv ut spelarens val till consol / backticktick används för att skriva ut variabeln i en sträng med ${variabelnamn}
   console.log(`Datorn valde: ${datorVal}`); // Skriv ut datorns val
